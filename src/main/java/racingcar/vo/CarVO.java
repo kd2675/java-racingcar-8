@@ -19,6 +19,10 @@ public class CarVO {
         return position;
     }
 
+    public String getPositionString() {
+        return "-".repeat(Math.max(0, position));
+    }
+
     public void moveForward(int randomValue) {
         if (canMove(randomValue)) {
             position++;
