@@ -21,4 +21,8 @@ public class Output {
     private static void printCarStatus(CarVO car) {
         System.out.println(car.getName() + " : " + car.getPositionString());
     }
+
+    public static void printWinners(List<String> winners) {
+        System.out.println("최종 우승자 : " + String.join(", ", winners));
+    }
 }
