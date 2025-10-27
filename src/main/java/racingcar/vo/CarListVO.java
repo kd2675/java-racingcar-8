@@ -7,14 +7,7 @@ public class CarListVO {
     private final List<CarVO> carVOList;
 
     public CarListVO(List<String> carNames) {
-        validateNotEmpty(carNames);
         this.carVOList = initCarList(carNames);
-    }
-
-    private void validateNotEmpty(List<String> carNames) {
-        if (carNames == null || carNames.isEmpty()) {
-            throw new IllegalArgumentException("자동차 이름 목록은 비어있을 수 없습니다.");
-        }
     }
 
     public List<CarVO> getCarList() {

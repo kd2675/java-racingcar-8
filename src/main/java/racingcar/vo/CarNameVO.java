@@ -29,7 +29,7 @@ public class CarNameVO {
     }
 
     private void validateLength(String value) {
-        if (value.length() > MAX_NAME_LENGTH) {
+        if (value.trim().length() > MAX_NAME_LENGTH) {
             throw new IllegalArgumentException("자동차 이름은 5자 이하여야 합니다.");
         }
     }
